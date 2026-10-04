@@ -1,18 +1,16 @@
 import "./Header.css"
-import { NavLink } from "react-router"
+import { NavLink, Link } from "react-router"
 
 export default function Header(){
-
     return (
         <div className="header">
-            <img className="header-logo" src="">
-            </img>
+            <img className="header-logo" src="/src/assets/ToKa Logo.png" alt="logo" />
+            
             <nav className="header-buttons">
                 <NavLink to="#">Social</NavLink>
-                <link to="#">Login / Sign Up</link>
-                <link to="#">Accessibility</link>
+                <Link to="#">Login / Sign Up</Link>
+                <Link to="#">Accessibility</Link>
             </nav>
         </div>
-
     )
 }
