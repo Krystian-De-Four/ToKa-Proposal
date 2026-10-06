@@ -10,6 +10,7 @@ export default function Header(){
                 <NavLink to="#">Social</NavLink>
                 <Link to="#">Login / Sign Up</Link>
                 <Link to="#">Accessibility</Link>
+
             </nav>
         </div>
     )

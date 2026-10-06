@@ -1,6 +1,7 @@
 import './Homepage.css'
 import Header from '../../Header/Header'
 import Footer from '../../Footer/Footer'
+import { NavLink } from 'react-router'
 
 export default function Homepage() {
     return (
@@ -12,7 +13,7 @@ export default function Homepage() {
                     <div className="hero-image-cover">
                         <img className="hero-image" src="/src/assets/Gym Image.png" alt="hero-background"/>
                         
-                        <button className="join-button">Join today</button>
+                        <NavLink className="join-button" to="/">Join today</NavLink>
                         <button className="learn-more-button">Learn more</button> 
                     </div>
 
