@@ -8,7 +8,7 @@ export default function Header(){
             
             <nav className="header-buttons">
                 <NavLink to="#">Social</NavLink>
-                <Link to="#">Login / Sign Up</Link>
+                <Link to="/signup">Login / Sign Up</Link>
                 <Link to="#">Accessibility</Link>
 
             </nav>

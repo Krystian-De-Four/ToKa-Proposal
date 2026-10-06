@@ -1,11 +1,18 @@
 import { useState } from 'react'
-import Homepage from './Components/Pages/Homepage/Homepage'
+import Pages from "./Routing"
+import Header from './Components/Header/Header'
+import Footer from "./Components/Footer/Footer"
+
+
 
 function App() {
 
   return (
     <>
-      <Homepage/>
+    <Header/>
+    <Pages/>
+    <Footer/>
+    
     </>
   )
 }
