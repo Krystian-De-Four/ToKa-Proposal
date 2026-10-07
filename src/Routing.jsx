@@ -10,6 +10,7 @@ export default function Pages() {
         <Routes>
             <Route index element={<Homepage />} />
             <Route path="signup" element={<Signup />} />
+            <Route path="login" element={<Login />} />
         </Routes>
     )
 }

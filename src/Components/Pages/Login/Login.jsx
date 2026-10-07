@@ -1,14 +1,12 @@
 import './Login.css'
-import Header from '../../Header/Header'
-import Footer from '../../Footer/Footer'
+import { NavLink } from 'react-router'
 
 export default function Login() {
 
     return (
         <div className="login-main">
-            <Header />
-
-            <Footer />
+            <p>sahdjsahdwj login</p>
+            <NavLink className="work" to="/signup">Dont have an account?</NavLink>
         </div>
 
     )
