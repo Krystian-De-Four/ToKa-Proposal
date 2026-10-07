@@ -55,9 +55,9 @@
 .footer-legal-items{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 28px;
     color: white;
-    padding-right: 170px;
+    padding-right: 200px;
 
     text-decoration: none;
     font-family: 'Arial', sans-serif;

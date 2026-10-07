@@ -32,20 +32,30 @@ export default function Homepage() {
                         <div className="container-top-row">
                             <div classname='container-1'>
                                 <NavLink to="/">| Free Services</NavLink>
+                                <p>Here at ToKa Fitness, we have a range of free services available when you sign up for an account with us,
+                                     this includes information and advice about training and healthy living, and 
+                                    access to a small range of our online resources</p>
                             </div>
                             <div classname='container-2'>
                                 <NavLink to="/">| Membership information</NavLink>
+                                <p>We also have a range of membership options to suit your needs, different tiers are at different prices that 
+                                    also tailor your experience to your needs at one of our great facilities</p>
 
                             </div>
                         </div>
 
                         <div className="container-btm-row">
                             <div classname='container-3'>
-                                <NavLink to="/">| Free Services</NavLink>
+                                <NavLink to="/">| Services</NavLink>
+                                <p>We offer a range of services to suit your needs, including digital content that will provide 
+                                    advice on fitness and healthy living, training, as well a lot of digital content on our 
+                                    customiseable plans and different services we provide</p>
 
                             </div>
                             <div classname='container-4'>
-                                <NavLink to="/">| Free Services</NavLink>
+                                <NavLink to="/">| Equiptment</NavLink>
+                                <p>At ToKa Fitness, we arent just well equiped in person but online as well, create an account with us to
+                                     find out more or pop into one of our facilites</p>
 
                             </div>
 
