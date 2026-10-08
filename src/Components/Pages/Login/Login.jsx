@@ -12,6 +12,7 @@ export default function Login() {
             <div className="login-password">
                 <label for="password">Enter account password:</label>
                 <input type="password" id="password-id" placeholder="Enter password:"></input>
+
                 <NavLink className="work" to="">Forgot Password?</NavLink>
             </div>
 
