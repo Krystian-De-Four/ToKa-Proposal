@@ -2,4 +2,49 @@
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.login-form-container{
+    padding: 30px;
+
+}
+
+.login-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-email-input{
+    width: 100%;
+    max-width: 75%;
+}
+
+.login-password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.login-password-input{
+    width: 100%;
+    max-width: 75%;
+}
+
+.signup-links{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-confirm{
+    
 }

@@ -45,7 +45,7 @@ export default function footer() {
                             <h2>Services</h2>
                         </div>
                         <NavLink to="#">Accessibility Features</NavLink>
-                        <NavLink to="#">Dashboard</NavLink>
+                        <NavLink to="dashboard">Dashboard</NavLink>
                         <NavLink to="#">Articles</NavLink>
                     </div>
 

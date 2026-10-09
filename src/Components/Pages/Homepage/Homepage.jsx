@@ -14,7 +14,7 @@ export default function Homepage() {
                         <img className="hero-image" src="/src/assets/Gym Image.png" alt="hero-background" />
 
                         <NavLink className="join-button" to="/signup">Join today</NavLink>
-                        <button className="learn-more-button">Learn more</button>
+                        <NavLink className="learn-more-button" to="/memberships">Learn more</NavLink>
                     </div>
 
                     <div className="hero-bottom">
