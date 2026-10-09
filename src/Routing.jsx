@@ -6,6 +6,10 @@ import Homepage from "./Components/Pages/Homepage/Homepage";
 import Memberships from './Components/Pages/Memberships/Memberships';
 import Social from './Components/Pages/Social/Social';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
+import Freeresources from './Components/Pages/Freeresources/Freeresources';
+import Managepage from './Components/Pages/Accountmanagement/Accountmanagement';
+import Articles from './Components/Pages/Articles/Articles';
+import Faq from './Components/Pages/Faq/Faq';
 
 export default function Pages() {
 
@@ -17,6 +21,10 @@ export default function Pages() {
             <Route path="memberships" element={<Memberships />} />
             <Route path="social" element={<Social />} />
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="faq" element={<Faq />} />
+            <Route path="articles" element={<Articles />} />
+            <Route path="freeResources" element={<Freeresources />} />
+            <Route path="manageAccount" element={<Managepage />} />
         </Routes>
     )
 }

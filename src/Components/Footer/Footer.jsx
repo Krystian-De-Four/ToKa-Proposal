@@ -22,15 +22,15 @@ export default function footer() {
                         </div>
                         <NavLink to="#">About Us</NavLink>
                         <NavLink to="#">Jobs</NavLink>
-                        <NavLink to="#">Events</NavLink>
-                        <NavLink to="#">FAQ</NavLink>
+                        <NavLink to="articles">Events</NavLink>
+                        <NavLink to="faq">FAQ</NavLink>
                     </div>
                     <div className="footer-sect a">
                         <div className="footer-sect-header">
                             <h2>User</h2>
                         </div>
-                        <NavLink to="#">Manage Account</NavLink>
-                        <NavLink to="#">Manage Subscriptions</NavLink>
+                        <NavLink to="manageAccount">Manage Account</NavLink>
+                        <NavLink to="manageAccount">Manage Subscriptions</NavLink>
                     </div>
                     <div className="footer-sect a">
                         <div className="footer-sect-header">

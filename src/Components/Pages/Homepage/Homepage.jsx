@@ -31,13 +31,13 @@ export default function Homepage() {
                     <div className="info-container-1">
                         <div className="container-top-row">
                             <div classname='container-1'>
-                                <NavLink to="/">| Free Services</NavLink>
+                                <NavLink to="freeResources">| Free Services</NavLink>
                                 <p>Here at ToKa Fitness, we have a range of free services available when you sign up for an account with us,
                                      this includes information and advice about training and healthy living, and 
                                     access to a small range of our online resources</p>
                             </div>
                             <div classname='container-2'>
-                                <NavLink to="/">| Membership information</NavLink>
+                                <NavLink to="memberships">| Membership information</NavLink>
                                 <p>We also have a range of membership options to suit your needs, different tiers are at different prices that 
                                     also tailor your experience to your needs at one of our great facilities</p>
 
@@ -53,22 +53,15 @@ export default function Homepage() {
 
                             </div>
                             <div classname='container-4'>
-                                <NavLink to="/">| Equiptment</NavLink>
+                                <NavLink to="articles">| Equiptment</NavLink>
                                 <p>At ToKa Fitness, we arent just well equiped in person but online as well, create an account with us to
                                      find out more or pop into one of our facilites</p>
 
                             </div>
-
                         </div>
-
-
-
                     </div>
-
                 </section>
-
             </main>
-
         </div>
     )
 }
