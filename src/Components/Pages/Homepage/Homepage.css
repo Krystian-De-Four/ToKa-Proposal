@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.content{
+.content {
     background-color: white;
     color: black;
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
 }
 
-.homepage-container{
+.homepage-container {
     padding: 0;
 }
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,13 +23,13 @@
     width: 100%;
 }
 
-.hero-image-cover{
+.hero-image-cover {
     position: relative;
     display: block;
     width: 100%;
 }
 
-.hero-image{
+.hero-image {
     width: 100%;
     max-height: 660px;
     object-fit: cover;
@@ -37,12 +37,11 @@
     background-color: white;
 }
 
-.join-button{
+.join-button {
     position: absolute;
     top: 45%;
     right: 8%;
     text-decoration: none;
-    
     background-color: purple;
     color: white;
     padding: 12px 28px;
@@ -51,23 +50,20 @@
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    transition: background-color 0.2s;
-    transition: box-shadow 0.7s;
-    -webkit-box-shadow: 0px 0px 12px 6px rgba(191,99,255,0.79); 
+    transition: background-color 0.2s, box-shadow 0.7s;
     box-shadow: 0px 0px 12px 6px rgba(191,99,255,0.79);
 }
 
-.join-button:hover{
+.join-button:hover {
     background-color: #3f0876;
-    -webkit-box-shadow: 0px 0px 50px 13px rgba(206,97,255,0.67); 
     box-shadow: 0px 0px 50px 13px rgba(206,97,255,0.67);
 }
 
-.learn-more-button{
+.learn-more-button {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    
+    text-decoration: none;
     background-color: grey;
     color: white;
     padding: 10px 20px;
@@ -77,66 +73,144 @@
     font-size: 14px;
     font-weight: bold;
     transition: background-color 0.4s;
-    -webkit-box-shadow: 0px 0px 11px 5px #4D4D4D; 
     box-shadow: 0px 0px 11px 5px #4D4D4D;
-    
 }
 
-.learn-more-button:hover{
+.learn-more-button:hover {
     background-color: black;
-    
 }
 
-.hero-bottom{
+.hero-bottom {
     width: 100%;
-    padding: 0 30px;
+    padding: 20px 40px 0 40px;
     display: flex;
 }
 
-.plans{
+.plans {
     margin: 0;
     font-size: 15px;
     font-weight: bold;
     color: black;
 }
 
-.info-section{
-    max-width: 800px;
+.info-section {
+    max-width: 1100px;
     margin: 40px auto 0 auto;
     text-align: center;
     padding: 0 20px;
-    padding-bottom: 50px;
-    > p {
-        padding-bottom: 80px;
-    }
-    
+    padding-bottom: 60px;
 }
 
-.info-section h2{
+.info-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: black;
-    padding-bottom: 10px;
-    
 }
 
-.info-section p{
+.info-section > p {
     font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.info-container-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-top-row,
+.container-btm-row {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.feature-card:hover {
+    background-color: #ededed;
+}
+
+.card-link {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.reviews-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.reviews-section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
     color: black;
 }
 
-.info-container-1{
+.reviews-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #dcdcdc;
+    flex: 1;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+    min-height: 190px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.container-top-row{
-    display: flex;
-    font-family: 'Arial', sans-serif;
-
+.review-stars {
+    color: #ffb703;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
-.container-btm-row{
-    display: flex;
-    
+.review-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 13px;
+    color: purple;
 }
