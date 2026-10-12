@@ -1,0 +1,37 @@
+.social-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+.chat-box {
+    border: 1px solid #000;
+    height: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-message {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.chat-form {
+    display: flex;
+    gap: 10px;
+
+    > button{
+        padding: 10px 20px;
+    }
+
+    > input{
+        flex: 1;
+    padding: 10px;
+    }
+}
+

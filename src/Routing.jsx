@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router";
 import Signup from "./Components/Pages/Signup/Signup";
 import Login from "./Components/Pages/Login/Login";
@@ -7,12 +6,13 @@ import Memberships from './Components/Pages/Memberships/Memberships';
 import Social from './Components/Pages/Social/Social';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
 import Freeresources from './Components/Pages/Freeresources/Freeresources';
-import Managepage from './Components/Pages/Accountmanagement/Accountmanagement';
+import Accountmanagement from './Components/Pages/Accountmanagement/Accountmanagement';
 import Articles from './Components/Pages/Articles/Articles';
 import Faq from './Components/Pages/Faq/Faq';
+import Contentplus from "./Components/Pages/Contentplus/Contentplus";
+import Contentextra from "./Components/Pages/Contentextra/Contentextra";
 
 export default function Pages() {
-
     return (
         <Routes>
             <Route index element={<Homepage />} />
@@ -24,7 +24,11 @@ export default function Pages() {
             <Route path="faq" element={<Faq />} />
             <Route path="articles" element={<Articles />} />
             <Route path="freeResources" element={<Freeresources />} />
-            <Route path="manageAccount" element={<Managepage />} />
+            <Route path="accountmanagement" element={<Accountmanagement />} />
+            <Route path="manageAccount" element={<Accountmanagement />} />
+            <Route path="contentplus" element={<Contentplus />} />
+            <Route path="tier1" element={<Contentplus />} />
+            <Route path="contentextra" element={<Contentextra />} /> 
         </Routes>
     )
 }

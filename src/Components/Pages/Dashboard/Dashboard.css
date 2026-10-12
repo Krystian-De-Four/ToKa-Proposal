@@ -1,0 +1,26 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.welcome-text {
+    margin-bottom: 20px;
+}
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.dash-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dash-link {
+    margin-top: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,39 @@
+.account-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-field input {
+    padding: 8px;
+}
+
+.billing-section {
+    border: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.update-btn, .cancel-btn {
+    padding: 10px;
+    cursor: pointer;
+}
