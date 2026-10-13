@@ -1,7 +1,12 @@
 import './Login.css'
+import { useState } from 'react';
 import { NavLink } from 'react-router'
 
 export default function Login() {
+
+        const [email, setEmail] = useState();
+        const [username, setUsername] = useState();
+        const [password, setPassword] = useState();
 
     return (
         <div className="login-main">

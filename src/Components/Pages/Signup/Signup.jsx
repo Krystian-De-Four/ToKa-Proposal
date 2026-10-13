@@ -1,8 +1,13 @@
 import './Signup.css'
+import { useState } from 'react';
 import { NavLink } from 'react-router'
 
 
 export default function signup() {
+
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const [confirmPass, setConfirmPass] = useState();
 
     function handleSubmit(e){
         e.preventDefault();
