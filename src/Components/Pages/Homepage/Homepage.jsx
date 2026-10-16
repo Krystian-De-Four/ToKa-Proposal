@@ -8,7 +8,7 @@ export default function Homepage() {
 
                 <section className="hero-section">
                     <div className="hero-image-cover">
-                        <img className="hero-image" src="/src/assets/Gym Image.png" alt="hero-background" />
+                        <img className="hero-image" src="/src/assets/gym-image.jpg" alt="hero-background" />
 
                         <NavLink className="join-button" to="/signup">Join today</NavLink>
                         <NavLink className="learn-more-button" to="/memberships">Learn more</NavLink>
