@@ -13,8 +13,8 @@ export default function BmiCalculator() {
         const h = parseFloat(height);
 
         if (w > 0 && h > 0) {
-            const heightInMeters = h / 100;
-            const calculated = w / (heightInMeters * heightInMeters);
+            const heightInMetres = h / 100;
+            const calculated = w / (heightInMetres * heightInMetres);
             const rounded = calculated.toFixed(1);
             setBmi(rounded);
 

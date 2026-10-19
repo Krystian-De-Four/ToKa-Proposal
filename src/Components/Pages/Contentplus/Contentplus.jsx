@@ -21,7 +21,7 @@ export default function Contentplus() {
 
             
             <div className="bmi-section-container">
-                <h3>Body Mass Index (BMI) Tool</h3>
+                <h3>Body Mass Index (BMI)</h3>
                 <p>Calculate your BMI to help tailor your customisable plans.</p>
                 <BmiCalculator/>
             </div>

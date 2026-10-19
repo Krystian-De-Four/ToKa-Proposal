@@ -8,9 +8,15 @@ export default function Login() {
         const [username, setUsername] = useState();
         const [password, setPassword] = useState();
 
+        function handleSubmit(e){
+        e.preventDefault();
+
+        alert("signed up!")
+    }
+
     return (
         <div className="login-main">
-            <form  className="login-form-container">
+            <form onSubmit={handleSubmit} className="login-form-container">
                 <div className="login-email">
                     <label for="email">Enter your username or E-Mail to login, below:</label>
                     <input className="login-email-input" type="email" placeholder="E-Mail / Username"></input>

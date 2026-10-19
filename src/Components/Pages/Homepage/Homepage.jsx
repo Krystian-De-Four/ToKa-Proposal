@@ -40,7 +40,7 @@ export default function Homepage() {
 
                         <div className="container-btm-row">
                             <div className="feature-card">
-                                <NavLink to="/" className="card-link">| Services</NavLink>
+                                <NavLink to="/contentextra" className="card-link">| Services</NavLink>
                                 <p>We offer a range of services to suit your needs, including digital content that will provide advice on fitness and healthy living, training, as well a lot of digital content on our customiseable plans and different services we provide.</p>
                             </div>
                             <div className="feature-card">
@@ -66,7 +66,7 @@ export default function Homepage() {
                         </div>
                         <div className="review-card">
                             <div className="review-stars">★★★★★</div>
-                            <p className="review-text">"Clean equipment, helpful staff, and the platform is so simple to navigate. Love it!"</p>
+                            <p className="review-text">"Clean equipment, helpful staff, and the platform is so simple to navigate!"</p>
                             <p className="review-author">- Someone.</p>
                         </div>
                     </div>
