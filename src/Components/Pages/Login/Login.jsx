@@ -11,7 +11,7 @@ export default function Login() {
         function handleSubmit(e){
         e.preventDefault();
 
-        alert("signed up!")
+        alert("Logged in")
     }
 
     return (
@@ -19,13 +19,13 @@ export default function Login() {
             <form onSubmit={handleSubmit} className="login-form-container">
                 <div className="login-email">
                     <label for="email">Enter your username or E-Mail to login, below:</label>
-                    <input className="login-email-input" type="email" placeholder="E-Mail / Username"></input>
+                    <input className="login-email-input" type="email" placeholder="E-Mail / Username" required></input>
                 </div>
                 <div className="login-password">
                     <label for="password">Enter account password:</label>
-                    <input className="login-password-input" type="password" placeholder="Enter password:"></input>
+                    <input className="login-password-input" type="password" placeholder="Enter password:" required></input>
 
-                    <NavLink className="work" to="">Forgot Password?</NavLink>
+                    <NavLink className="" to="">Forgot Password?</NavLink>
 
                     <button className="login-confirm">
                         <p>Login</p>

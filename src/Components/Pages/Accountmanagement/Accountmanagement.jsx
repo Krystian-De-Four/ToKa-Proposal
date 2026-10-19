@@ -1,6 +1,8 @@
 import './Accountmanagement.css';
 
 export default function Accountmanagement() {
+
+
     return (
         <div className="account-container">
             <h2>Account Management</h2>
@@ -9,18 +11,15 @@ export default function Accountmanagement() {
             <form className="account-form">
                 <div className="form-field">
                     <label>Full Name:</label>
-                    <input type="text" placeholder="Enter full name"/>
+                    <input type="text" placeholder="Name"/>
                 </div>
 
                 <div className="form-field">
                     <label>Email Address:</label>
-                    <input type="email" placeholder="Enter email" />
+                    <input type="email" placeholder="Email" />
                 </div>
 
-                <div className="form-field">
-                    <label>Date of Birth:</label>
-                    <input type="date" />
-                </div>
+
 
                 <button type="submit" className="update-btn">Save Changes</button>
             </form>
