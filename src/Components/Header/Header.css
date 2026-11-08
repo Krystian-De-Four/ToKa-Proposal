@@ -1,23 +1,23 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    
     background-color: black;
     padding: 15px 40px;
 }
 
-.header-logo{
+.header-logo {
     height: 70px;
     object-fit: contain;
 }
 
-.header-buttons{
+.header-buttons {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 25px;
 }
 
-.header-buttons a{
+.header-buttons a {
     color: white;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
@@ -26,6 +26,38 @@
     transition: color 0.2s;
 }
 
-.header-buttons a:hover{
+.header-buttons a:hover {
     color: rgba(209, 4, 209, 0.842);
+}
+
+.user-nav-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout-btn {
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+    background-color: #ef4444;
+    color: white;
+}
+
+.user-username-display {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
 }

@@ -1,45 +1,67 @@
 import './Login.css'
 import { useState } from 'react';
-import { NavLink } from 'react-router'
+import { NavLink, useNavigate } from 'react-router';
+import axios from 'axios';
 
 export default function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-        const [email, setEmail] = useState();
-        const [username, setUsername] = useState();
-        const [password, setPassword] = useState();
-
-        function handleSubmit(e){
+    async function handleSubmit(e) {
         e.preventDefault();
+        
+        try {
+            const response = await axios.post("http://127.0.0.1:8001/login", {
+                email,
+                password
+            });
+            //Save user info & tier data to LOCALSTORAGE
+            localStorage.setItem("user", JSON.stringify(response.data));
 
-        alert("Logged in")
+            //redirect user after successful login
+            navigate("/"); 
+        } catch (err) {
+            alert("Login failed: " + (err.response?.data?.detail || "An error occurred."));
+        }
     }
 
     return (
         <div className="login-main">
             <form onSubmit={handleSubmit} className="login-form-container">
                 <div className="login-email">
-                    <label for="email">Enter your username or E-Mail to login, below:</label>
-                    <input className="login-email-input" type="email" placeholder="E-Mail / Username" required></input>
+                    <label htmlFor="email">Enter your E-Mail to login, below:</label>
+                    <input 
+                        className="login-email-input" 
+                        type="email" 
+                        placeholder="E-Mail" 
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required 
+                    />
                 </div>
                 <div className="login-password">
-                    <label for="password">Enter account password:</label>
-                    <input className="login-password-input" type="password" placeholder="Enter password:" required></input>
+                    <label htmlFor="password">Enter account password:</label>
+                    <input 
+                        className="login-password-input" 
+                        type="password" 
+                        placeholder="Enter password" 
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required 
+                    />
 
                     <NavLink className="" to="">Forgot Password?</NavLink>
 
-                    <button className="login-confirm">
+                    <button type="submit" className="login-confirm">
                         <p>Login</p>
                     </button>
 
                     <div className="signup-links">
-
-                        <NavLink className="login-to-signup" to="/signup">Dont have an account?</NavLink>
+                        <NavLink className="login-to-signup" to="/signup">Don't have an account?</NavLink>
                     </div>
                 </div>
-
             </form>
-
         </div>
-
-    )
+    );
 }
