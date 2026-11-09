@@ -5,7 +5,7 @@ export default function Contentplus() {
     return (
         <div className="content-page-container">
             <h2>Premium Content Plus & Tools</h2>
-            <p>Access advanced video training routines, customised nutritional guides, and profile tracking tools.</p>
+            <p>Standard video training routines, customised meal plans, personal insights</p>
 
             <div className="content-grid">
                 <div className="content-item">

@@ -4,7 +4,7 @@ export default function Contentextra() {
     return (
         <div className="content-page-container">
             <h2>Premium Content Extra</h2>
-            <p>Exclusive advanced personal training materials, priority bookings, and advanced nutritional tracking.</p>
+            <p>Advanced personal training materials, personal training lessons, and customised workout and meal plans.</p>
             
             <div className="content-grid">
                 <div className="content-item">

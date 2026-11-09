@@ -30,6 +30,8 @@ export default function Signup() {
             console.log("Success from backend:", response.data);
             alert("Signed up successfully!");
 
+            window.location.href = "/login";
+
         } catch (error) { //error handling 
             console.error("Signup error:", error);
             alert("Signup failed.");

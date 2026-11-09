@@ -66,7 +66,6 @@
     
 }
 
-
 .footer-items{
     justify-content: center;
     display: flex;
@@ -83,4 +82,63 @@
 .footer-legal-text:hover{
     color: purple;
     text-decoration: underline;
+}
+
+
+.footer-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-modal-box {
+    background-color: #f3f4f6; 
+    color: #111827;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 420px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.7s; 
+}
+
+.footer-modal-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-modal-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: #374151;
+}
+
+.footer-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #6b7280; 
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.footer-modal-close:hover {
+    color: #111827;
 }
