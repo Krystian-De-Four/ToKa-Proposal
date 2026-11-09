@@ -1,5 +1,6 @@
 import './Contentextra.css';
 
+
 export default function Contentextra() {
     return (
         <div className="content-page-container">

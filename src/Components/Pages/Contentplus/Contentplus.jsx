@@ -1,4 +1,5 @@
 import BmiCalculator from "../../Bmicalculator/Bmicalculator";
+
 import './Contentplus.css';
 
 export default function Contentplus() {
