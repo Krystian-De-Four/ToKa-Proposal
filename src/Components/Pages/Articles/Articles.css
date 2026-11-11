@@ -1,0 +1,44 @@
+.articles-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+ 
+.articles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+ 
+.article-card {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+ 
+.article-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: #e5e7eb;
+  color: #6b7280;
+}
+ 
+.article-category {
+  margin: 1rem 0 0.25rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+ 
+.article-card button {
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+ 

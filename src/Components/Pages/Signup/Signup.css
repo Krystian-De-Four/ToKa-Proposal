@@ -149,3 +149,23 @@ input {
     }
 
 }
+.signup-tier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 40px;
+    color: black;
+}
+
+.signup-tier-options {
+    display: flex;
+    gap: 25px;
+}
+
+.signup-tier-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}

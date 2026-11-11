@@ -11,6 +11,7 @@ import Articles from './Components/Pages/Articles/Articles';
 import Faq from './Components/Pages/Faq/Faq';
 import Contentplus from "./Components/Pages/Contentplus/Contentplus";
 import Contentextra from "./Components/Pages/Contentextra/Contentextra";
+import TierControl from "./Components/tiercontrol/tiercontrol";
 
 export default function Pages() {
     return (
@@ -24,11 +25,11 @@ export default function Pages() {
             <Route path="faq" element={<Faq />} />
             <Route path="articles" element={<Articles />} />
             <Route path="freeResources" element={<Freeresources />} />
-            <Route path="accountmanagement" element={<Accountmanagement />} />
-            <Route path="manageAccount" element={<Accountmanagement />} />
-            <Route path="contentplus" element={<Contentplus />} />
-            <Route path="tier1" element={<Contentplus />} />
-            <Route path="contentextra" element={<Contentextra />} /> 
+            <Route path="accountmanagement" element={<TierControl requires="free"><Accountmanagement /></TierControl>} />
+            <Route path="manageAccount" element={<TierControl requires="free"><Accountmanagement /></TierControl>} />
+            <Route path="contentplus" element={<TierControl requires="plus"><Contentplus /></TierControl>} />
+            <Route path="tier1" element={<TierControl requires="plus"><Contentplus /></TierControl>} />
+            <Route path="contentextra" element={<TierControl requires="extra"><Contentextra /></TierControl>} />
         </Routes>
     )
 }
