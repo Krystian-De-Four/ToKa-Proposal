@@ -17,7 +17,7 @@ export default function Accountmanagement() {
         e.preventDefault();
 
         try {
-            const response = await axios.put("http://127.0.0.1.8001/update_profile", {
+            const response = await axios.put("http://127.0.0.1:8001/update", {
                 current_email: user.email,
                 username: username,
                 email: email
