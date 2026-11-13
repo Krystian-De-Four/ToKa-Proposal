@@ -26,6 +26,7 @@ export default function Accountmanagement() {
                 username: response.data.username,
                 email: response.data.email
             };
+            
 
             setUser(updatedUser);
             localStorage.setItem("user", JSON.stringify(updatedUser));
